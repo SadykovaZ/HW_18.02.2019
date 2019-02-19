@@ -12,18 +12,22 @@ namespace HW_18._02._2019
     {
         int x = 1;
         int y = 0;
+        int res=0;
         public void Method()
         {
-
-            try
-            {
-                int res = x/ y;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
+            if (y == 0)
+                throw new Exception("На ноль делить нельзя");
+            else
+                res = x / y;
+            //try
+            //{
+            //    int res = x/ y;
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
                 
-            }
+            //}
         }
         public static void Method1()
         {
